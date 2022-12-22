@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/body.jpg);
+  height: 100vh;
+}
+label {
+  color: blue;
+}
+table {
+  text-align: center;
+}
+.card {
+  width: 500px;
+  margin: 50px auto;
+}
+.card2 {
+  width: 700px;
+  margin: 0 auto;
+}
+#validate,
+#validate2,
+#validate3 {
+  color: red;
+}
