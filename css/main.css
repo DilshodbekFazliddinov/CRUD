@@ -10,6 +10,7 @@ body {
   background-position: center;
   background-image: url(../img/body.jpg);
   height: 100vh;
+  user-select: none;
 }
 label {
   color: blue;
@@ -29,4 +30,15 @@ table {
 #validate2,
 #validate3 {
   color: red;
+}
+@media screen and (max-width: 800px) {
+  .card2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }

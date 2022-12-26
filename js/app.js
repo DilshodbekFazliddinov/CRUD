@@ -28,8 +28,20 @@ formel.addEventListener("submit", (e) => {
     newPassword.innerHTML = password;
     newList.appendChild(newPassword);
 
+    const actions = document.createElement("td");
+    let btn = document.createElement("button");
+    btn.classList = "btn btn-primary";
+    btn.innerHTML = `<i class="fa-solid fa-trash"></i>`;
+    actions.appendChild(btn);
+    newList.appendChild(actions);
     tbody.appendChild(newList);
+
+    // adeventlissener
     newList.addEventListener("dblclick", () => {
+      newList.style = "opacity:0.8";
+    });
+    btn.addEventListener("dblclick", () => {
+      alert(`siz rostan ham o'chirmoqchimisiz?`);
       newList.remove();
     });
   } else if (name.length == 0) {
